@@ -7,6 +7,10 @@ path_to_metadata = "metadata/"
 crate = ROCrate()
 i = 0
 for subdir in os.listdir(path_to_metadata):
+    print(f'Name of subdirectory: {subdir}')
+    print(f'Path of subdirectory: {path_to_metadata + subdir}')
+    print(f'Path of RoCrate: {"roCrates/test_crate" + str(i)}')
+
     crate.add_dataset(path_to_metadata + subdir)
     crate.write("roCrates/test_crate" + str(i))
     i += 1

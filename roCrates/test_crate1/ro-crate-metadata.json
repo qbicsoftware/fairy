@@ -7,7 +7,7 @@
             "datePublished": "2024-08-13T14:48:55+00:00",
             "hasPart": [
                 {
-                    "@id": "example_project/"
+                    "@id": "example_project2/"
                 }
             ]
         },
@@ -22,7 +22,7 @@
             }
         },
         {
-            "@id": "example_project/",
+            "@id": "example_project2/",
             "@type": "Dataset"
         }
     ]

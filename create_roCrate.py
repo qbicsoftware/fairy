@@ -3,6 +3,7 @@ import os
 from rocrate.rocrate import ROCrate
 
 path_to_metadata = "metadata/"
+print(path_to_metadata)
 
 crate = ROCrate()
 i = 0

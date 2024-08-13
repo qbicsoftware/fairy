@@ -4,10 +4,22 @@
         {
             "@id": "./",
             "@type": "Dataset",
-            "datePublished": "2024-08-13T14:48:55+00:00",
+            "datePublished": "2024-08-13T14:56:21+00:00",
             "hasPart": [
                 {
                     "@id": "example_project/"
+                },
+                {
+                    "@id": "example_project/20190120170545031-435291.html"
+                },
+                {
+                    "@id": "example_project/QNANO_new.tsv"
+                },
+                {
+                    "@id": "example_project/Q1101_new.tsv"
+                },
+                {
+                    "@id": "example_project/QHASP_new.tsv"
                 }
             ]
         },
@@ -23,7 +35,37 @@
         },
         {
             "@id": "example_project/",
-            "@type": "Dataset"
+            "@type": "Dataset",
+            "hasPart": [
+                {
+                    "@id": "example_project/20190120170545031-435291.html"
+                },
+                {
+                    "@id": "example_project/QNANO_new.tsv"
+                },
+                {
+                    "@id": "example_project/Q1101_new.tsv"
+                },
+                {
+                    "@id": "example_project/QHASP_new.tsv"
+                }
+            ]
+        },
+        {
+            "@id": "example_project/20190120170545031-435291.html",
+            "@type": "File"
+        },
+        {
+            "@id": "example_project/QNANO_new.tsv",
+            "@type": "File"
+        },
+        {
+            "@id": "example_project/Q1101_new.tsv",
+            "@type": "File"
+        },
+        {
+            "@id": "example_project/QHASP_new.tsv",
+            "@type": "File"
         }
     ]
 }

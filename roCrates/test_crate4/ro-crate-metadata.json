@@ -7,19 +7,19 @@
             "datePublished": "2024-09-13T13:08:12+00:00",
             "hasPart": [
                 {
-                    "@id": "example_project4/"
+                    "@id": "example_project5/"
                 },
                 {
-                    "@id": "example_project4/Q1101_new.tsv"
+                    "@id": "example_project5/Q1101_new.tsv"
                 },
                 {
-                    "@id": "example_project4/20190120170545031-435291.html"
+                    "@id": "example_project5/20190120170545031-435291.html"
                 },
                 {
-                    "@id": "example_project4/QNANO_new.tsv"
+                    "@id": "example_project5/QNANO_new.tsv"
                 },
                 {
-                    "@id": "example_project4/QHASP_new.tsv"
+                    "@id": "example_project5/QHASP_new.tsv"
                 }
             ]
         },
@@ -34,37 +34,37 @@
             }
         },
         {
-            "@id": "example_project4/",
+            "@id": "example_project5/",
             "@type": "Dataset",
             "hasPart": [
                 {
-                    "@id": "example_project4/Q1101_new.tsv"
+                    "@id": "example_project5/Q1101_new.tsv"
                 },
                 {
-                    "@id": "example_project4/20190120170545031-435291.html"
+                    "@id": "example_project5/20190120170545031-435291.html"
                 },
                 {
-                    "@id": "example_project4/QNANO_new.tsv"
+                    "@id": "example_project5/QNANO_new.tsv"
                 },
                 {
-                    "@id": "example_project4/QHASP_new.tsv"
+                    "@id": "example_project5/QHASP_new.tsv"
                 }
             ]
         },
         {
-            "@id": "example_project4/Q1101_new.tsv",
+            "@id": "example_project5/Q1101_new.tsv",
             "@type": "File"
         },
         {
-            "@id": "example_project4/20190120170545031-435291.html",
+            "@id": "example_project5/20190120170545031-435291.html",
             "@type": "File"
         },
         {
-            "@id": "example_project4/QNANO_new.tsv",
+            "@id": "example_project5/QNANO_new.tsv",
             "@type": "File"
         },
         {
-            "@id": "example_project4/QHASP_new.tsv",
+            "@id": "example_project5/QHASP_new.tsv",
             "@type": "File"
         }
     ]

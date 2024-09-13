@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RO-Crate Display</title>
+    <script type="application/ld+json">
+        {{crate_json_ld}}
+    </script>
+</head>
+<body>
+<h1>RO-Crate Metadata</h1>
+
+{% for item in graph %}
+    <h2>Type: {{ item["@type"] }}</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Property</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for key, value in item.items() %}
+            {% if key != "@type" and key != "@id" %}
+                <tr>
+                    <td><strong>{{ key }}</strong></td>
+                    <td>
+                        {%- if value is mapping -%}
+                            <pre>{{ value | tojson(indent=2) }}</pre>
+                        {%- elif value is iterable and not value is string -%}
+                            {{ value | join(', ') }}
+                        {%- else -%}
+                            {{ value }}
+                        {%- endif -%}
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endfor %}
+
+</body>
+</html>

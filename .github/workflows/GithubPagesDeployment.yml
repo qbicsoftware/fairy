@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   push:
     paths:
-      - 'gh_pages'
+      - 'gh_pages/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

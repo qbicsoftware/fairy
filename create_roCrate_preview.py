@@ -4,6 +4,7 @@ from jinja2 import Environment, FileSystemLoader
 
 # Define the directory containing subdirectories with RO-Crate files
 base_dir = 'roCrates'
+gh_pages_dir = 'gh_pages'
 
 # Set up Jinja2 environment and load the template
 env = Environment(loader=FileSystemLoader('templates'))
@@ -33,13 +34,19 @@ for subdir in os.listdir(base_dir):
             # Render the template with data, including the JSON-LD string
             rendered_html = template.render(crate_json_ld=crate_json_ld, graph=graph)
 
-            # Define output HTML file path (name it after the subdirectory)
             output_html_path = os.path.join(subdir_path, 'ro-crate-preview.html')
+            print(output_html_path)
+            pages_html_path = os.path.join(gh_pages_dir, f'ro-crate-preview-{subdir}.html')
+            print(pages_html_path)
 
             # Save the rendered HTML to a file
             with open(output_html_path, 'w') as output_file:
                 output_file.write(rendered_html)
 
-            print(f"HTML page has been generated: {output_html_path}")
+            # Save the rendered HTML in gh-pages directory
+            with open(pages_html_path, 'w') as output_file:
+                output_file.write(rendered_html)
+
+            print(f"HTML page has been generated: {output_html_path} and {pages_html_path}")
         else:
             print(f"No RO-Crate file found in: {subdir_path}")

@@ -4,7 +4,7 @@ from jinja2 import Environment, FileSystemLoader
 
 # Define the directory containing subdirectories with RO-Crate files
 base_dir = 'roCrates'
-gh_pages_dir = 'gh_pages'
+gh_pages_dir = 'docs'
 
 # Set up Jinja2 environment and load the template
 env = Environment(loader=FileSystemLoader('templates'))
